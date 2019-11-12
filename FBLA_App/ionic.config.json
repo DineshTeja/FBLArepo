@@ -1,7 +1,0 @@
-{
-  "name": "FBLA_App",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "angular"
-}
