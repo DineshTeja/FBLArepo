@@ -1,0 +1,36 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>
+        Contact Us
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+  <img class = "contact" height = "260px" width = "610px" src= "assets/contactUS.png">
+
+  <table class ='tabletest'>
+            
+      <tr>
+          <td><!--instagram profile will open when clicked-->
+            <img class = "instagram" height = "80px" width = "80px" src= "assets/instagram.jpg" (click) = "openInstagram()"></td>
+          <td class= "acc"><h4>@bentonvillefbla</h4></td>
+      </tr>
+      
+      <tr>
+        <td><!--open facebook profile when icon is clicked-->
+          <img class = "facebook" height = "70px" width = "70px" src= "assets/facebook.png" (click) = "openFacebook()"></td>
+        <td class= "acc"><h4>Arkansas FBLA District VII</h4></td>
+      </tr>
+      
+      <tr>
+        <td><!--open twitter profile when icon is clicked-->
+          <img class = "twitter" height = "70px" width = "70px" src= "assets/twitter.jpg" (click) = "openTwitter()"></td>
+        <td class= "acc"><h4>@arkansas_fbla</h4></td>
+      </tr>
+    
+    </table>
+</ion-content>
