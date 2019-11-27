@@ -1,19 +1,88 @@
+.content {
+    display: block;
+    width: 100%;
+    height: 300px;
+}
+
 .header {
     display: block;
 
 }
 
-.tabletest {
-    width: 90%;
+.tests {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+}
+
+.presentations {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+}
+
+.Interview {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+}
+
+.Team {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+}
+
+
+
+.heading {
+    text-align: center;
+    font-weight: bold;
+}
+
+.description {
+    padding-right: 1%;
+    padding-bottom: 1%;
+    text-align: left;
+    margin-left: 1%;
+}
+
+.table {
+    table-layout: fixed;
     border: 3px solid black;
     text-align: center;
     margin-top: 2%;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-right: auto;
+    margin-left: auto;
+    word-wrap: break-word;
+
 }
 
-tr,th,td {
-    padding: 10px;
+td {
+    padding: 3%;
     border: 2px solid black;
 }
 
+tr{
+    
+    border: 2px solid black;
+}
+
+th{
+    scroll-padding: 1%;
+    border: 2px solid black;
+}
+
+
+.modified {
+    font-style: italic;
+}
+
+.subheading {
+    font-style: italic;
+    text-align: center;
+}

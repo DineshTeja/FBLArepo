@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
+
 
 @Component({
   selector: 'app-fbla-competitive-events',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FBLACompetitiveEventsPage implements OnInit {
 
-  constructor() { }
+  constructor( public navCtrl: NavController) { }
 
   ngOnInit() {
   }
