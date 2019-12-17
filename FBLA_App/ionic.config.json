@@ -1,7 +1,8 @@
 {
   "name": "FBLA_App",
   "integrations": {
-    "cordova": {}
+    "cordova": {},
+    "capacitor": {}
   },
   "type": "angular"
 }
