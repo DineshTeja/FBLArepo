@@ -62,5 +62,20 @@ export class FBLACompetitiveEventsPage implements OnInit {
     window.open("https://www.fbla-pbl.org/fbla/competitive-events/category/team-performance/",'_system', 'location=yes');
   }
 
+  hideShow() {
+    var x= document.getElementById("table");
+    var y= document.getElementById("button");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      y.innerHTML = "Hide Competitive Events List";
+    } 
+    else {
+      x.style.display = "none";
+      y.innerHTML = "Show Competitive Events List";
+    }
+  }
+
+
+
 
 }

@@ -13,14 +13,20 @@
 .websiteButton {
   display:block;
   text-align: center;
-  margin-top: 13px;
-  margin-right: 20%;
-  margin-left: 24%;
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.table {
+  display: block;
+  margin-top: 3%;
 }
 
 .slides {
   height: 184px
 }
+
 
 .instagram {
   display: block;
@@ -41,4 +47,30 @@
   margin-right: 30%;
   margin-top: 3px;
 
+}
+
+.locationPic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.joinButton {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+}
+
+.pblLogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stripe {
+  display: block;
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
 }

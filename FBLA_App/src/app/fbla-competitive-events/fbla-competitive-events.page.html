@@ -10,10 +10,12 @@
   </ion-header>
 
 <ion-content class = "content">
-    <img class = "header" height = "260px" width = "610px" src= "assets/compEventsheader.png">
-  <h1 class = "heading">FBLA Competitive Events</h1>
+  <img class = "header" height = "260px" width = "610px" src= "assets/compEventsheader.png">
+  <!--<h1 class = "heading">FBLA Competitive Events</h1>
 
-  <img class = "signUp" height = "95px" width = "250px" src= "assets/signUpButton.png">
+  <img class="stripe" height = "4px" width = "50%" src= "assets/blackstripe.png">-->
+
+  <button class="signUpButton" >Sign Up for an Event</button>
 
   <h3 class = "subheading">Tests</h3>
 
@@ -50,30 +52,9 @@
   <h3 class = "subheading">Team Events</h3>
   <img class = "Team" height = "40px" width = "250px" src= "assets/Events-TeamP/Team Performance.png" (click) = "openTeamPro()">
 
-
-  <!--
-  <h4 class = "description">
-    <h4>Each event is governed by specific guidelines and rating sheets. Once you choose an event, please review the guidelines closely.</h4>
-
-    <h4>View and print all guidelines for FBLA events.</h4>
-      
-    <h4>View all FBLA events with ratings sheets.</h4> 
-      
-    <h4>Competitors can choose to compete in individual events, as part of a team, or as part of a chapter team:</h4> 
-
-    <ul style="list-style-type:disc;">
-      <li>Individual</li>
-      <li>Team</li>
-      <li>Chapter</li>
-    </ul>
-
-    <h4>There are also events specifically for high school students in grades 9-10.</h4> 
-      
-    <h4>Individual and team events focus on skills useful in leadership and career development; chapter events recognize overall achievement and performance in chapter management and growth.</h4>
-      
-    <h4>See the full lists of skills students develop here.</h4>
-  </h4>-->
-    <table class ='table' width = "97%">
+  <button class="listButton" id = "button" (click) ="hideShow()">Hide Competitive Events List</button>
+    
+    <table id= "table" class ='table' width = "97%">
             
       <tr>
         <th>Name</th>
@@ -516,5 +497,5 @@
             </tr>
           
     </table>
-    
+
 </ion-content>

@@ -3,18 +3,36 @@
 }
 
 .table-responsive {
-    width: 90%;
+    width: 100%;
     border: 3px solid black;
     text-align: center;
-    margin-top: 2%;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
-tr,th,td {
+td {
     padding: 10px;
     border: 2px solid black;
+}
+
+th,.tableHeader {
+    border: none, white;
+    padding: 8px;
+    color: gray;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 110%;
+    
+}
+.monthHeader {
+    color:black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 230%;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: italic;
+
 }
 
 

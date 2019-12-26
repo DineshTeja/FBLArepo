@@ -24,7 +24,13 @@ export class ContactUsPage implements OnInit {
 
   }
 
+  openDistrictWeb() {
+    window.open("http://ardistrict7.weebly.com/",'_system', 'location=yes')
+  }
+
   ngOnInit() {
   }
+
+
 
 }

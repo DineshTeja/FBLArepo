@@ -1,4 +1,5 @@
 .About {
+    padding: 3%;
     text-align: center;
     font-style: bold;
     margin-left: 4%;
@@ -11,6 +12,7 @@
     margin-right: 45%;
 }
 .prepare {
+    padding: 1.5%;
     text-align: center;
     font-style: italic;
     margin-left: 2%;
@@ -19,8 +21,19 @@
 
 .EdAbout {
     text-align: center;
-    font-style: italic;
+    font-style: bold;
     margin-left: 3%;
     margin-right: 3%;
 }
 
+.video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stripe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
