@@ -41,6 +41,11 @@ export class AppComponent {
       title: 'Contact Us',
       url: '/contact-us',
       icon: 'menu'
+    },
+    {
+      title: 'Sign Up',
+      url: '/fbla-sign-up',
+      icon: 'menu'
     }
     
   ];

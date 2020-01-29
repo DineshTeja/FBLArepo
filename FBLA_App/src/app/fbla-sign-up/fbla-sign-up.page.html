@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+    <ion-title>Sign Up for FBLA</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content >
+
+  <form>
+      <img class = "headerpic" height = "230px" width = "500px" src= "assets/FBLA-Logo-Color.png">      
+      <img class="stripe" height = "4px" width = "100%" src= "assets/blackstripe.png">
+    <div class="list">
+      <label class= "item" width= "100%">
+        <span class="input-label">Name(Last, First)</span>
+        <input class = "username" width = 30% type="text" placeholder="Ex. Doe, Jane">
+      </label>
+      <img class="stripe" height = "1px" width = "100%" src= "assets/blackstripe.png">
+      <label class= "item">
+          <span class="input-label">Competitive Event</span>
+          <input class = "username" width = "30%" type="text" placeholder="Ex. Business Plan">
+        </label>
+        <img class="stripe" height = "1px" width = "100%" src= "assets/blackstripe.png">
+        <label class= "item">
+            <span class="input-label">District</span>
+            <!--<input class = "username" width = "30%" type="text" placeholder="Ex. District VII">-->
+            <select name = "Districts" class ="Districts">
+                <option value = "1">District I</option>
+                <option value = "2">District II</option>
+                <option value = "3">District III</option>
+                <option value = "4">District IV</option>
+                <option value = "5">District V</option>
+                <option value = "6">District VI</option>
+                <option value = "7">District VII</option>
+
+                
+              </select>
+          </label>
+          <img class="stripe" height = "1px" width = "100%" src= "assets/blackstripe.png">
+        <label class= "item">
+              <span class="input-label">Chapter</span>
+              <input class = "username" width = "30%" type="text" placeholder="Ex. Bentonville HS">
+        </label>
+          <img class="stripe" height = "1px" width = "100%" src= "assets/blackstripe.png">
+    </div>
+
+
+  </form>
+
+
+</ion-content>

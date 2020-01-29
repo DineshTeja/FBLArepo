@@ -1,0 +1,37 @@
+.input-label {
+    margin: 2%;
+    font-size: 115%;
+    font-style: bold;
+}
+
+.username {
+    border: 2px, solid black;
+    font-size: 115%;
+    margin-left: 5%;
+}
+
+.item {
+    width: 100%;
+
+}
+
+.list {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.headerpic {
+    display: block;
+}
+
+.Districts {
+    border-color: black;
+    scrollbar-arrow-color: black;
+    font-size: 100%;
+}
+
+.Districts:after {
+    content: "/25bc";
+    
+  }
