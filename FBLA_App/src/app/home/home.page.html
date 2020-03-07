@@ -4,7 +4,7 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>
-      Home
+      <img class = "flag" height = "10%" width = "20%" src= "assets/fblaFlag.png">
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -15,40 +15,96 @@
     <!--creates a moving gallery of images for the home page-->
   <ion-slides class = "slides" autoplay="5000" loop="true" speed="3000">
       <ion-slide>
-        <img class = "logo" height = "190px" width = "610px" src= "assets/FBLA-logo.png">          
+        <img class = "logo" height = "20%" width = "100%" src= "assets/FBLA-logo.png">          
       </ion-slide>
       <ion-slide>
-        <!--<img class = "world" height = "190px" width = "610px" src= "assets/fblaworld.jpg"> -->
+        <img class = "world" height = "10%" width = "100%" src= "assets/fblaworld.jpg">
       </ion-slide>
   </ion-slides>
 
-  
-  <img class = "fblaheader" height = "75px" width = "530px" src= "assets/FBLAheader.png">
 
-    <!--full FBLA website will open when button is clicked-->
-  <img class = "websiteButton" height = "40px" width = "70%" src= "assets/websiteButton.png" (click) = "openWebsite()">
+  <ion-slides  class="blockslides" autoplay="5000" loop="true" speed="3000">
+      <ion-slide>
+          <div class= "joinBlock">
 
-  <table class = "table">
-            
-    <tr>
-        <td><!--instagram profile will open when clicked-->
-          <img class = "instagram" height = "80px" width = "80px" src= "assets/instagram.jpg" (click) = "openInstagram()"></td>
-        <td><!--open facebook profile when icon is clicked-->
-          <img class = "facebook" height = "70px" width = "70px" src= "assets/facebook.png" (click) = "openFacebook()"></td>
-        <td><!--open twitter profile when icon is clicked-->
-          <img class = "twitter" height = "70px" width = "70px" src= "assets/twitter.jpg" (click) = "openTwitter()"></td>
-    </tr>
-  
-  </table>
+      
+              <img class ="crest" height = "60%" width = "60%" src="assets/fblaCrest.png">
+              
+              <h5 class="MissionStatement">FBLA-PBL inspires and prepares students to become community-minded business leaders in a global society through relevant career preparation and leadership experiences.</h5>
+        
+              <button class="joinButton" (click)="joinFbla()">Join FBLA Today</button>
+        
+          </div>
+      </ion-slide>   
+      
+      <ion-slide>
+        <div class= "compEventsBlock">
 
-  <img class = "world" height = "190px" width = "610px" src= "assets/fblaworld.jpg">
+      
+          <img class ="FBLA-PBL" height = "60%" width = "60%" src="assets/FBLA-PBL_registered.png">
+          
+          <h5 class="CompEventsDescription">The FBLA National Awards Program, also known as competitive events, recognizes and rewards excellence in a broad range of business and career-related areas. Competitive Events prepare students for successful careers in business and help them thrive in future work environments.</h5>
+    
+          <button class="compButton" >View Competitive Events</button>
+    
+      </div>
+      </ion-slide>
+
+      <ion-slide>
+        <div class= "AwardsBlock">
+
+      
+          <img class ="awardsPic" height = "30%" width = "50%" src="assets/fblaAwards.jpg">
+
+          <ion-list-header class="AwardsHeader">FBLA Membership Benefits</ion-list-header>
+
+          <table class="membershipTable">
+            <tr>
+              <td>
+                <ion-list-header class="AwardsDescription">Discounts</ion-list-header>
+                <ion-list-header class="AwardsDescription">Scholarships</ion-list-header>
+        
+                <ion-list-header class="AwardsDescription">Publications</ion-list-header>
+                <ion-list-header class="AwardsDescription">Awards</ion-list-header>
+                <ion-list-header class="AwardsDescription">Career Prep</ion-list-header>
+
+              </td>
+              <td>
+                <img class ="iconPic" height = "70%" width = "90%" src="assets/FBLAiconLogo.png">
+              </td>
+            </tr>
 
 
-  <!--<img class="worldImg" height = "30%" width = "70%" src= "assets/worldImage.jpg">-->
+          </table>
 
-  <img class = "joinButton" height = "7%" width = "80%" src= "assets/joinfbla.png">
 
-  <img class="stripe" height = "4px" width = "100%" src= "assets/blackstripe.png">
-  
-  <img class = "pblLogo" height = "15%" width = "70%" src= "assets/fblapblLogo.png">
+          
+
+         
+    
+          <!--<button class="AwardsButton" >View Competitive Events</button>-->
+    
+         </div>
+      </ion-slide>
+
+  </ion-slides>
+
+   
+
+  <div class="Upcoming">
+
+   <ion-list-header class="upcomingHeader">Upcoming Events</ion-list-header>
+
+   
+
+   <h6 class="events">State Leadership Conference: April 6-7, 2020, Little Rock</h6>
+
+   <h6 class="events">State Officer Training: TBA</h6>
+
+   <h6 class="events">National Leadership Conference: June 29 – July 2, 2020, Salt Lake City, Utah</h6>
+
+   <h6 class="viewMore">View More ⇨</h6>
+
+ </div>
+
 </ion-content>

@@ -1,8 +1,26 @@
+
+.homecontent {
+  --background: rgba(248, 238, 238, 0.13);
+  
+
+}
+
 .logo {
   display: block;
-  margin-left: 0px;
-  margin-right: 0px;
-  background-color: rgb(0, 119, 255);
+  width: 100%;
+  height: 20%;
+}
+
+.world {
+  display: block;
+  width: 100%;
+  height: 15%;
+}
+
+.flag {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .fblaheader {
@@ -21,11 +39,11 @@
 .table {
   display: block;
   margin-top: 6%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.slides {
-  height: 184px
-}
+
 
 
 .instagram {
@@ -55,13 +73,6 @@
   margin-right: auto;
 }
 
-.joinButton {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 9%;
-  margin-bottom: 7%;
-}
 
 .pblLogo {
   display: block;
@@ -76,20 +87,234 @@
   margin-right: auto;
 }
 
-.worldImg {
+
+
+
+
+
+.stripe {
   display: block;
-  margin-top: 5%;
-  margin-bottom: 5%;
+}
+
+/* Upcoming block   */
+
+
+.viewMore {
+  color: blue;
+  margin-top: 0.001%;
+}
+
+.upcomingHeader {
+  margin-top: 1%;
+  margin-left: 16%;
+  margin-right: auto;
+  color: white;
+  font-size: 130%;
+}
+
+
+.Upcoming {
+  width: 100%;
+  height: 26%;
+  position: relative;
+  padding: 5px;
+  text-align: center;
+  margin-top: 0.5%;
+  background-color: rgb(214, 51, 51);
+  color: white;
+}
+
+.events {
+  font-size: 90%;
+  margin-top:0.3%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+
+/* Join fbla block   */
+
+
+.joinBlock {
+  width: 95%;
+  height: 37%;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+  margin-top: 2%;
+  margin-bottom: 0.5%;
+  position: relative;
+  background-color: black;
+  border-radius: 15px;
+}
+
+.joinButton {
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  
+  margin-top: 2%;
+  margin-bottom: 5.5%;
+  width: 70%;
+  height: 8%;
+  padding: 6px;
+  background-color: rgb(0, 119, 255);
+  color: white;
+  font-size: 110%;
+  border-radius: 10px;
 
 }
 
-.world {
-  display: block;
-  margin-top: 9%;
-  margin-bottom: 5%;
+.MissionStatement {
   margin-left: auto;
   margin-right: auto;
+  color: white;
+  font-family: "Trebuchet MS", sans-serif;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  font-style: italic;
+  font-size: 100%;
+}
+
+.crest {
+  display: block;
+  height: 50%;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+}
+
+
+
+
+/* competitive Events block   */
+
+
+.compEventsBlock {
+  width: 95%;
+  height: 37%;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+  margin-top: 2%;
+  margin-bottom: 0.5%;
+  position: relative;
+  background-color: rgb(156, 200, 241);
+  color: black;
+  border-radius: 15px;
+}
+
+.compButton {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 75%;
+  height: 8%;
+  padding: 8px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-size: 110%;
+  border-radius: 10px;
+}
+
+.CompEventsDescription {
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  font-family: "Trebuchet MS", sans-serif;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  font-style: italic;
+  font-size: 100%;
+}
+
+.FBLA-PBL {
+  display: block;
+  height: 70%;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+}
+
+
+
+/* awards block   */
+
+.awardsPic {
+  display: block;
+  height: 30%;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+}
+
+.AwardsBlock {
+  width: 95%;
+  height: 37%;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+  margin-top: 2%;
+  margin-bottom: 0.5%;
+  position: relative;
+  background-color: rgb(0, 0, 0);
+  color: black;
+  border-radius: 15px;
+}
+
+
+.AwardsDescription {
+  margin-left: 15%;
+  margin-right: auto;
+  color: rgb(255, 255, 255);
+  text-decoration-line: underline;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  font-size: 80%;
+}
+
+.AwardsButton {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 4%;
+  width: 75%;
+  height: 8%;
+  padding: 8px;
+  background-color: rgb(0, 119, 255);
+  color: white;
+  font-size: 110%;
+  border-radius: 10px;
+}
+
+.AwardsHeader {
+  color: white;
+  text-align: center;
+  margin-left: 0.5%;
+  margin-right: auto;
+  font-size: 120%;
+
+}
+
+.membershipTable {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-bottom: 0%;
+}
+
+
+.iconPic {
+  display: block;
+  width: 60%;
+  height: 45%;
+  margin-left: 25%;
+  margin-right: 15%;
+  margin-top: auto;
+  margin-bottom: auto;
 }

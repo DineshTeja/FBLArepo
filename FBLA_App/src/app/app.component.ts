@@ -4,6 +4,7 @@ import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 
+ 
 
 @Component({
   selector: 'app-root',
@@ -33,7 +34,7 @@ export class AppComponent {
       icon: 'menu'
     },
     {
-      title: 'Current Events in District 7',
+      title: 'Local Chapter Attendance',
       url: '/current-events',
       icon: 'menu'
     },
@@ -45,6 +46,11 @@ export class AppComponent {
     {
       title: 'Sign Up',
       url: '/fbla-sign-up',
+      icon: 'menu'
+    },
+    {
+      title: 'Calendar',
+      url: '/calendar',
       icon: 'menu'
     }
     

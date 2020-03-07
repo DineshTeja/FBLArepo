@@ -1,0 +1,74 @@
+.flag {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.calendar {
+    display: block;
+}
+
+.subheader {
+    --background: #1A4BDE;
+    display: block;
+    color: white;
+}
+
+.Districts {
+    border-color: black;
+    display: block;
+    background-color: rgb(255, 255, 255);
+    font-size: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    width: 47%;
+    text-align: center;
+}
+
+.Chapters {
+    border-color: black;
+    display: block;
+    background-color: rgb(255, 255, 255);
+    font-size: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    width: 57%;
+    text-align: center;
+}
+
+.districtHeader {
+    margin-left: 28%;
+    margin-right: auto;
+    font-size: 18px;
+    color: rgb(63, 63, 63);
+}
+
+.chapter {
+    margin-left: 25.5%;
+    margin-right: auto;
+    font-size: 18px;
+    color: rgb(63, 63, 63);
+}
+
+.EventsButton {
+    background-color: #0090FD;
+    font-size: 15px;
+    color: white;
+    display: block;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left:3%;
+    padding-right: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 12px;
+    width: 40%;
+    height: 4%;
+
+}

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from '@ionic/angular';
+import { Router } from '@angular/router'
+import { FblaSignUpPage } from '../fbla-sign-up/fbla-sign-up.page';
 
 
 
@@ -11,7 +13,7 @@ import { NavController } from '@ionic/angular';
 })
 export class HomePage {
 
-  constructor( public navCtrl: NavController) {
+  constructor( private router: Router) {
     
   }
 
@@ -29,6 +31,10 @@ export class HomePage {
 
   openTwitter() {
     window.open("https://twitter.com/arkansas_fbla",'_system', 'location=yes')
+  }
+
+  joinFbla() {
+    this.router.navigateByUrl('..src/app/fbla-sign-up')
   }
 
 }

@@ -4,57 +4,149 @@
         <ion-menu-button></ion-menu-button>
       </ion-buttons>
       <ion-title>
-        FBLA Competitive Events
+        <img class = "flag" height = "10%" width = "20%" src= "assets/fblaFlag.png">
       </ion-title>
     </ion-toolbar>
   </ion-header>
 
 <ion-content class = "content">
-  <img class = "header" height = "260px" width = "610px" src= "assets/compEventsheader.png">
-  <!--<h1 class = "heading">FBLA Competitive Events</h1>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
 
-  <img class="stripe" height = "4px" width = "50%" src= "assets/blackstripe.png">-->
+  
 
-  <button class="signUpButton" >Sign Up for an Event</button>
+ <div class="main">
+  <img class = "CatImage" height = "6%" width = "60%" src= "assets/categoriesImage.png">
+  
+  <ion-slides class = "slides" autoplay="5000" loop="true" speed="3000">
+    <ion-slide>
 
-  <h3 class = "subheading">Tests</h3>
+      <div class="tests">
 
-  <img class = "tests" height = "40px" width = "250px" src= "assets/Events-Tests/Objective Test & Role Play.png" (click) = "openObjtestRole()">
+      <div class= "CatSubheading">
+        <ion-list-header class="CatHeading">Event Categories</ion-list-header>
+      </div>
 
-  <img class = "tests" height = "40px" width = "250px" src= "assets/Events-Tests/Objective Tests.png" (click) = "openObjtest()">
+      <table class="CategoryTable">
+          <tr class="rows">
+            <td class="rows"><ion-list-header><ion-label class="Categories">Tests</ion-label> </ion-list-header></td>
+            
+          </tr>
 
-  <img class = "tests" height = "40px" width = "250px" src= "assets/Events-Tests/Production & Objective Test.png" (click) = "openProdObj()"> 
-
-  <img class = "tests" height = "60px" width = "250px" src= "assets/Events-Tests/Collaborative Objective Test.png" (click) = "openCollab()">
-
-
-
-  <h3 class = "subheading">Presentations</h3>
-  <img class = "presentations" height = "40px" width = "250px" src= "assets/Events-Presentations/Presentationwith.png" (click) = "openPresWith()">
-
-  <img class = "presentations" height = "40px" width = "250px" src= "assets/Events-Presentations/Presentationwithout.png" (click) = "openPresWithout()">
-
-  <img class = "presentations" height = "40px" width = "250px" src= "assets/Events-Presentations/Speech.png" (click) = "openSpeech()">
-
-  <img class = "presentations" height = "40px" width = "250px" src= "assets/Events-Presentations/Demonstration.png" (click) = "openDemo()">
-
-  <img class = "presentations" height = "60px" width = "250px" src= "assets/Events-Presentations/PrejudgedP.png" (click) = "openPrePro()">
-
-  <img class = "presentations" height = "60px" width = "250px" src= "assets/Events-Presentations/PrejudgedR.png" (click) = "openPreRep()">
-
-  <img class = "presentations" height = "60px" width = "250px" src= "assets/Events-Presentations/Collab.png" (click) = "openCollab()">
-
-
-
-  <h3 class = "subheading">Interviews</h3>
-  <img class = "Interview" height = "40px" width = "250px" src= "assets/Events-Interview/Interview.png" (click) = "openInterview()">
-
-  <h3 class = "subheading">Team Events</h3>
-  <img class = "Team" height = "40px" width = "250px" src= "assets/Events-TeamP/Team Performance.png" (click) = "openTeamPro()">
-
-  <button class="listButton" id = "button" (click) ="hideShow()">Hide Competitive Events List</button>
+          <tr class="rows">
+              <td class="rows"><ion-list-header><ion-label class="Categories">Presentations</ion-label></ion-list-header></td>
+          </tr>
     
-    <table id= "table" class ='table' width = "97%">
+          <tr class="rows">
+            <td class="rows"><ion-list-header><ion-label class="Categories">Interviews</ion-label></ion-list-header></td>
+          </tr> 
+
+          <tr class="rows">
+              <td class="rows"><ion-list-header><ion-label class="Categories">Group/Team Performances</ion-label></ion-list-header></td>             
+          </tr> 
+      </table>
+    </div>
+      
+
+    </ion-slide>
+    
+    <ion-slide>
+      
+      <div class ="tests">
+          
+        <div class="subheading"><ion-list-header class="testHeading">Tests</ion-list-header></div>
+    
+        <table class="testTable">
+          <tr class="rows">
+            <td class="rows"><ion-list-header (click)= "openObjtestRole()"><ion-label class="testCategories">Objective Test & Role Play</ion-label> </ion-list-header></td>
+            
+          </tr>
+          <tr class="rows">
+              <td class="rows"><ion-list-header (click)= "openObjtest()"><ion-label class="testCategories">Objective Tests</ion-label></ion-list-header></td>
+          </tr>
+    
+          <tr class="rows">
+            <td class="rows"><ion-list-header (click)= "openProdObj()"><ion-label class="testCategories">Production & Objective Test</ion-label></ion-list-header></td>
+            
+          </tr> 
+        </table>
+        <ion-list-header  (click)= " openCollab()"><ion-label class="collabCategories">Collaborative Objective Test & Team Performance(Role Play)</ion-label></ion-list-header>
+      </div>          
+    </ion-slide>
+
+    <ion-slide>
+      <div class ="tests">
+          <div class="subheading"><ion-list-header class="presHeading">Presentations</ion-list-header></div>
+    
+        <table class="presTable">
+          <tr class="rows">
+            <td class="rows"><ion-list-header  (click)= "openPresWith()"><ion-label class="presCategories">Presentation with Equipment</ion-label></ion-list-header></td>
+            <td class="rows"><ion-list-header  (click)= "openPresWithout()"><ion-label class="presCategories">Presentation w/o Equipment </ion-label></ion-list-header></td>
+          </tr>
+    
+          <tr class="rows">
+            <td class="rows"><ion-list-header  (click)= "openPrePro()"><ion-label class="presCategories">Prejudged Projects & Presentation</ion-label></ion-list-header></td>
+            <td class="rows"><ion-list-header  (click)= " openPreRep()"><ion-label class="presCategories">Prejudged Reports & Presentation</ion-label></ion-list-header></td>
+          </tr> 
+
+          <tr class="rows">
+            <td class="rows"><ion-list-header (click)= "openSpeech()"><ion-label class="speech">Speech</ion-label></ion-list-header></td>
+            <td class="rows"><ion-list-header (click)= " openDemo()"><ion-label class="demonstration">Demonstration</ion-label></ion-list-header></td>
+            
+          </tr> 
+
+        </table>
+
+        <ion-list-header  (click)= " openCollab()"><ion-label class="collabCategories">Collaborative Objective Test & Team Performance(Role Play)</ion-label></ion-list-header>
+      </div> 
+    </ion-slide>
+  
+    <ion-slide>
+      <table class="interviewTeamTable">
+       <tr class="rows">
+         <td class="rows">
+       <div class ="tests">
+          <div class="subheading"><ion-list-header class="intHeading">Interviews</ion-list-header></div>
+        <ion-list-header (click)= "openInterview()"><ion-label class="InterviewTeam">Individual Interview</ion-label></ion-list-header>
+       </div>
+      </td> 
+      </tr>
+      
+      <tr class="rows">
+          <td class="rows">
+       <div class ="tests">
+          <div class="subheading"><ion-list-header class="groupHeading">Group Performances</ion-list-header></div>
+          <ion-list-header (click)= "openTeamPro()"><ion-label class="InterviewTeam">Team Performance</ion-label></ion-list-header>
+       </div> 
+
+       </td>
+       </tr>
+    </table>
+    </ion-slide>
+
+  </ion-slides>
+
+
+  
+
+  
+
+    <div class="eventsBlock">
+      <button class="signUpButton" >Sign Up for an Event</button>
+
+      <h4 class="description">Individual or Team</h4>
+
+      <img class ="logo" height = "100px" width = "130px" src="assets/FBLA-Logo-Color.png">
+
+      <h6 class="description">Individual and team events focus on skills useful in leadership and career development, preparing members for their future careers and work environments.</h6>
+
+
+    </div>
+
+
+
+    <button class="listButton" id = "button" (click) ="hideShow()">Hide Competitive Events List</button>
+    
+    <table id= "Eventstable" class ='table' width = "97%" >
             
       <tr>
         <th>Name</th>
@@ -101,7 +193,7 @@
             <tr>
               <td>Banking & Financial Systems</td>
               <td>Individual & Team</td>
-              <td>Collaborative Objective Test & Team Performance (Role Play)</td>
+              <td>Collaborative Objective Test & Team Performance(Role Play)</td>
             </tr>
 
             <tr>
@@ -497,5 +589,14 @@
             </tr>
           
     </table>
+
+
+
+</div>
+
+<div class="headerBlock">
+    <h2>FBLA Competitive Events</h2>
+</div>
+
 
 </ion-content>

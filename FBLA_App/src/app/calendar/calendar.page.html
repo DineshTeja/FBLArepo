@@ -1,0 +1,61 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>
+          <img class = "flag" height = "10%" width = "20%" src= "assets/fblaFlag.png">
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+
+  <ion-header>
+      <ion-toolbar class= "subheader"><ion-title class="title">Calendar of Events</ion-title></ion-toolbar>
+  </ion-header>
+
+  <h4><ion-list-header class="districtHeader">FBLA District</ion-list-header></h4>
+
+  <select class ="Districts" >
+      <span class="iconify" data-icon="ion-md-arrow-dropdown" data-inline="false"></span>
+      <option value="" disabled selected default selected>Select your District</option>
+      <option value= "1">District I</option>
+      <option value = "2">District II</option>
+      <option value = "3">District III</option>
+      <option value = "4">District IV</option>
+      <option value = "5">District V</option>
+      <option value = "6">District VI</option>
+      <option value = "7">District VII</option>
+  </select>
+
+  <h4 ><ion-list-header class="chapter">Local Chapter</ion-list-header></h4>
+
+  <select class ="Chapters" id = "chapterPicker" [(ngModel)]= "selectedChapter" (ngModelChange) = "generateNewList()">
+          <span class="iconify" data-icon="ion-md-arrow-dropdown" data-inline="false"></span>
+          <option value="" disabled default selected>Select your Local Chapter</option>
+          <option value= "1">Bentonville High School</option>
+          <option value = "2">Springdale High School</option>
+          <option value = "3">Heritage High School</option>
+          <option value = "4">Lincoln High School</option>
+          <option value = "5">Gentry High School</option>
+          <option value = "6">Rogers Newtech High School</option>
+  </select>
+ 
+<ion-calendar [(ngModel)]="date"
+    (ngModelChange)="onChange()"
+    [options]="optionsMulti"
+    [type]="type"
+    [format]="'YYYY-MM-DD'"
+    class = "calendar"
+    id = "calendar">
+</ion-calendar>
+<button class = "EventsButton" id = "EventsButton" (click)="newEvent()">Add Event</button>
+
+<div id = "eventsContainer">
+
+</div>
+
+
+
+</ion-content>

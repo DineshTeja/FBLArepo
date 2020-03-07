@@ -1,3 +1,14 @@
+.subheader {
+    --background: #1A4BDE;
+    display: block;
+}
+
+.title {
+    color: white;
+    font-size: 100%;
+}
+
+
 .current{
     display: block;
 }
@@ -11,6 +22,12 @@
     margin-right: auto;
 }
 
+.flag {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
 
 td {
     padding: 10px;
@@ -34,5 +51,190 @@ th,.tableHeader {
     font-style: italic;
 
 }
+.Districts {
+    border-color: black;
+    display: block;
+    background-color: rgb(255, 255, 255);
+    font-size: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    width: 47%;
+    text-align: center;
+}
 
+.Chapters {
+    border-color: black;
+    display: block;
+    background-color: rgb(255, 255, 255);
+    font-size: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    width: 57%;
+    text-align: center;
+}
+
+select::-ms-expand { display: block; }
+
+
+.schoolInput {
+    display: block;
+    font-size: 105%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+    border-color: rgb(180, 180, 180);
+    width: 65%;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.headers {
+    margin-left: 28%;
+    margin-right: auto;
+    margin-bottom: 0%;
+    font-size: 18px;
+    color: black;
+    
+}
+
+.chapterHeader {
+    margin-left: 25.5%;
+    margin-right: auto;
+    font-size: 18px;
+    color: black;
+}
+
+.districtHeader {
+    margin-left: 28%;
+    margin-right: auto;
+    font-size: 18px;
+    color: black;
+}
+
+.Month {
+    
+    display: block;
+    background-color: rgb(255, 255, 255);
+    font-size: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    width: 95%;
+}
+
+.table{
+    border: none;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rows {
+    border: none;
+}
+
+.MemberButton {
+    background-color: #0090FD;
+    font-size: 15px;
+    color: white;
+    display: block;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left:3%;
+    padding-right: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 12px;
+    width: 40%;
+    height: 2%;
+
+}
+
+.EditButton {
+    display: block;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 15px;
+    height: 22px;
+    width: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+}
+
+.listheaderRow {
+    width: 100%;
+    border: 0px, white;
+}
+
+.row {
+    border: 0px;
+}
+
+.saveButton {
+    background-color: rgb(0, 0, 0);
+    font-size: 15px;
+    color: white;
+    display: block;
+    margin-top: 0%;
+    margin-bottom: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 12px;
+    width: 45%;
+    height: 2%;
+}
+
+.ListHeader {
+    margin-left: 18.5%;
+    margin-right: auto;
+    margin-top: 1%;
+    font-size: 20px;
+}
+
+
+
+.dateDisplay {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.dateContainer {
+    margin-top: 0%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.date {
+    text-align: center;
+    margin-left: 28%;
+    margin-right: auto;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 1%;
+    color: black;
+
+}
 

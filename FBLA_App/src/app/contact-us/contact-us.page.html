@@ -1,44 +1,62 @@
 <ion-header>
-    <ion-toolbar>
-      <ion-buttons slot="start">
-        <ion-menu-button></ion-menu-button>
-      </ion-buttons>
-      <ion-title>
-        Contact Us
-      </ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      <img class = "flag" height = "10%" width = "20%" src= "assets/fblaFlag.png">
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
 
-<ion-content>
-  <img class = "contact" height = "260px" width = "610px" src= "assets/contactUS.png">
-  
-  <table class ='tabletest'>
+<ion-content class = "content">
+
+  <div class="tab">
+      <table class ='tabletest'>
             
-      <tr>
-          <td><!--instagram profile will open when clicked-->
-            <img class = "instagram" height = "80px" width = "80px" src= "assets/instagram.jpg" (click) = "openInstagram()"></td>
-          <td class= "acc" (click) = "openInstagram()"><h4>@bentonvillefbla</h4></td>
-      </tr>
-      
-      <tr>
-        <td><!--open facebook profile when icon is clicked-->
-          <img class = "facebook" height = "70px" width = "70px" src= "assets/facebook.png" (click) = "openFacebook()"></td>
-        <td class= "acc" (click) = "openFacebook()"><h4>Arkansas FBLA District VII</h4></td>
-      </tr>
-      
-      <tr>
-        <td><!--open twitter profile when icon is clicked-->
-          <img class = "twitter" height = "70px" width = "70px" src= "assets/twitter.jpg" (click) = "openTwitter()"></td>
-        <td class= "acc" (click) = "openTwitter()"><h4>@arkansas_fbla</h4></td>
-      </tr>
-    
-    </table>
+          <tr>
+              <td>
+                <img class = "instagram" height = "75px" width = "75px" src= "assets/instagram.jpg" (click) = "openInstagram()"></td>
+              <td class= "acc" (click) = "openInstagram()"><h4>@bentonvillefbla</h4></td>
+          </tr>
+          
+          <tr>
+            <td>
+              <img class = "facebook" height = "60px" width = "60px" src= "assets/facebook.png" (click) = "openFacebook()"></td>
+            <td class= "acc" (click) = "openFacebook()"><h4>Arkansas FBLA District VII</h4></td>
+          </tr>
+          
+          <tr>
+            <td>
+              <img class = "twitter" height = "60px" width = "60px" src= "assets/twitter.jpg" (click) = "openTwitter()"></td>
+            <td class= "acc" (click) = "openTwitter()"><h4>@arkansas_fbla</h4></td>
+          </tr>
+        
+        </table>
 
-    <button class="arWebButton" (click)= "openWebsiteAR()">District VII Website</button>
+        <button class="arWebButton" (click)= "openWebsiteAR()">District VII Website</button>
+
+        <div class="connect">
+
+          <h2>Connect with us through our State Newsletter</h2>
+          <img class="icon" height = "55%" width = "80%" src= "assets/newsletterImage.png" (click) = openNewsletter()>
+        </div>
+
+        
   
     
-    <h2 class= "connect">Connect with us through our State Newsletter</h2>
+  </div>
 
-    <img class="icon" height = "11%" width = "21%" src= "assets/newsletterIcon.png" (click) = openNewsletter()>
+  <div class="text-block">
+      <h1 class="header">Contact Us</h1>
+    </div>
+
+
+
+    
+
+
+  
+
 
 </ion-content>

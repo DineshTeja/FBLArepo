@@ -3,32 +3,46 @@
       <ion-buttons slot="start">
           <ion-menu-button></ion-menu-button>
         </ion-buttons>
-    <ion-title>Sign Up for FBLA</ion-title>
+        <ion-title ><img class = "flag" height = "10%" width = "20%" src= "assets/fblaFlag.png"></ion-title>
   </ion-toolbar>
 </ion-header>
 
+<script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
 
-<ion-content >
+<ion-content>
 
   <form>
-      <img class = "headerpic" height = "230px" width = "500px" src= "assets/FBLA-Logo-Color.png">      
-      <img class="stripe" height = "4px" width = "100%" src= "assets/blackstripe.png">
+
+      <ion-header>
+          <ion-toolbar class= "subheader"><ion-title class="formtitle">FBLA Sign Up Form</ion-title></ion-toolbar>
+      </ion-header>
+
+
+      <img class = "headerpic" height = "190px" width = "610px" src= "assets/FBLA-logo.png">   
+      
+   <div class="formblock">
+
+      
+
     <div class="list">
       <label class= "item" width= "100%">
-        <span class="input-label">Name(Last, First)</span>
-        <input class = "username" width = 30% type="text" placeholder="Ex. Doe, Jane">
+        <span class="input-label">Name</span>
+        <input class = "nameInput" width = 30% type="text" placeholder="Last, First">
       </label>
-      <img class="stripe" height = "1px" width = "100%" src= "assets/blackstripe.png">
+      <img class="stripe" height = "1px" width = "90%" src= "assets/blackstripe.png">
       <label class= "item">
           <span class="input-label">Competitive Event</span>
-          <input class = "username" width = "30%" type="text" placeholder="Ex. Business Plan">
+          <input class = "compEventInput" width = "30%" type="text" placeholder="Ex. Business Plan">
         </label>
-        <img class="stripe" height = "1px" width = "100%" src= "assets/blackstripe.png">
+        <img class="stripe" height = "1px" width = "90%" src= "assets/blackstripe.png">
+
+        
         <label class= "item">
             <span class="input-label">District</span>
-            <!--<input class = "username" width = "30%" type="text" placeholder="Ex. District VII">-->
-            <select name = "Districts" class ="Districts">
-                <option value = "1">District I</option>
+            
+            <select class ="Districts">
+                <span class="iconify" data-icon="ion-md-arrow-dropdown" data-inline="false"></span>
+                <option value= "1">District I</option>
                 <option value = "2">District II</option>
                 <option value = "3">District III</option>
                 <option value = "4">District IV</option>
@@ -37,18 +51,25 @@
                 <option value = "7">District VII</option>
 
                 
-              </select>
+            </select>
           </label>
-          <img class="stripe" height = "1px" width = "100%" src= "assets/blackstripe.png">
+
+
+          <img class="stripe" height = "1px" width = "90%" src= "assets/blackstripe.png">
         <label class= "item">
               <span class="input-label">Chapter</span>
-              <input class = "username" width = "30%" type="text" placeholder="Ex. Bentonville HS">
+              <input class = "chapterInput" width = "30%" type="text" placeholder="Ex. Bentonville HS">
         </label>
-          <img class="stripe" height = "1px" width = "100%" src= "assets/blackstripe.png">
+          <img class="stripe" height = "1px" width = "90%" src= "assets/blackstripe.png">
+
+        <button class = "JoinButton">Join</button>
+        
     </div>
 
+      </div>
 
+      
   </form>
-
+  <img class = "world" height = "195px" width = "600px" src= "assets/world-white.jpg">
 
 </ion-content>

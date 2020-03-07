@@ -4,15 +4,14 @@ import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
-import { IonicStorageModule } from '@ionic/storage';
+import { CalendarModule } from 'ion2-calendar';
 
-
-import { CurrentEventsPage } from './current-events.page';
+import { CalendarPage } from './calendar.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: CurrentEventsPage
+    component: CalendarPage
   }
 ];
 
@@ -22,14 +21,8 @@ const routes: Routes = [
     FormsModule,
     IonicModule,
     RouterModule.forChild(routes),
-    IonicStorageModule.forRoot(),
+    CalendarModule
   ],
-  declarations: [CurrentEventsPage]
+  declarations: [CalendarPage]
 })
-
-export class CurrentEventsPageModule {
-
-  
-}
-
-
+export class CalendarPageModule {}

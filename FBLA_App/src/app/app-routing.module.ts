@@ -16,7 +16,8 @@ const routes: Routes = [
   { path: 'fbla-competitive-events', loadChildren: './fbla-competitive-events/fbla-competitive-events.module#FBLACompetitiveEventsPageModule' },
   { path: 'contact-us', loadChildren: './contact-us/contact-us.module#ContactUsPageModule' },
   { path: 'current-events', loadChildren: './current-events/current-events.module#CurrentEventsPageModule' },
-  { path: 'fbla-sign-up', loadChildren: './fbla-sign-up/fbla-sign-up.module#FblaSignUpPageModule' }
+  { path: 'fbla-sign-up', loadChildren: './fbla-sign-up/fbla-sign-up.module#FblaSignUpPageModule' },
+  { path: 'calendar', loadChildren: './calendar/calendar.module#CalendarPageModule' }
 ];
 
 @NgModule({

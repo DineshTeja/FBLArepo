@@ -4,30 +4,95 @@
         <ion-menu-button></ion-menu-button>
       </ion-buttons>
       <ion-title>
-        Current Events in District 7
+          <img class = "flag" height = "10%" width = "20%" src= "assets/fblaFlag.png">
       </ion-title>
     </ion-toolbar>
   </ion-header>
 
-<ion-content>
-    <img class = "current" height = "260px" width = "610px" src= "assets/currentEvents.png">
 
-    <h3 class="monthHeader" id= "month" style = "text-align: center">Month</h3>
 
-    <table width= "100%" >
-      <tr class= "tableHeader">
-        <th>S</th>
-        <th>M</th>
-        <th>T</th>
-        <th>W</th>
-        <th>T</th>
-        <th>F</th>
-        <th>S</th>
-      </tr>
-    </table>
+
+
+ <!-- <script src="//code.ionicframework.com/1.0.0-beta.14/js/ionic.bundle.js"></script>-->
+
+
+<ion-content  (ngModelChange) = "ngOnChanges()">
+
+        <ion-header>
+                <ion-toolbar class= "subheader"><ion-title class="title">Local Chapter Meetings</ion-title></ion-toolbar>
+        </ion-header>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+
+
+    
+
+    <h4><ion-list-header class="districtHeader">FBLA District</ion-list-header></h4>
+
+    <select class ="Districts" >
+        <span class="iconify" data-icon="ion-md-arrow-dropdown" data-inline="false"></span>
+        <option value="" disabled selected default selected>Select your District</option>
+        <option value= "1">District I</option>
+        <option value = "2">District II</option>
+        <option value = "3">District III</option>
+        <option value = "4">District IV</option>
+        <option value = "5">District V</option>
+        <option value = "6">District VI</option>
+        <option value = "7">District VII</option>
+    </select>
+
+    <h4 ><ion-list-header class="chapterHeader">Local Chapter</ion-list-header></h4>
+
+    <select class ="Chapters" id = "chapterPicker" [(ngModel)]= "selectedChapter" (ngModelChange) = "generateNewList()">
+            <span class="iconify" data-icon="ion-md-arrow-dropdown" data-inline="false"></span>
+            <option value="" disabled default selected>Select your Local Chapter</option>
+            <option value= "1">Bentonville High School</option>
+            <option value = "2">Springdale High School</option>
+            <option value = "3">Heritage High School</option>
+            <option value = "4">Lincoln High School</option>
+            <option value = "5">Gentry High School</option>
+            <option value = "6">Rogers Newtech High School</option>
+    </select>
+
+    <h4 ><ion-list-header class="headers">Meeting Date</ion-list-header></h4>
+
+
+  <div id="moreContainer">
+    
+
+  <ion-item class = "dateContainer">
+        <ion-datetime class= "date" [(ngModel)]="selectedDate" (ngModelChange) = "generateNewList()" displayFormat = "MM/DD/YYYY"  id = "DatePicker"
+        min="{{lastThirty}}" max="{{today}}" value="{{today}}" placeholder = "Tap to Select"></ion-datetime>
+        
+        <p class="dateDisplay">{{selectedDate | date: ''}}</p>
+
+  </ion-item>
+
+
   
   
-  
-  
+     <ion-list id ="list" show-delete = "showDelete">
+      <ion-list-header class="ListHeader">Members Present</ion-list-header>
+      <!--<button class = "saveButton">Save Attendance</button>-->
+      <form id="schoolForm"> 
+            <ion-input class = "schoolInput"  id= "nameInput" type="text" placeholder="Enter New Member Name Here" ></ion-input>
+         </form>
+   
+         <button class = "MemberButton" id = "MemberButton" (click)="checkBoxAdd()">Add Member</button>
+         <button class="EditButton" id ="EditButton" (click) = "removeItems()">Edit</button>
+<!--
+         <ion-input class = "schoolInput" type="text" [(ngModel)] = "inputtext" placeholder="test" ></ion-input>
+         <button class="EditButton"  (click) = "testSave()">Save</button>
+         <button class="EditButton" (click) = "testLoad()">Load</button>-->
+         <button class="EditButton"  id = "save" (click) = "save()">Save</button>
+         <button class="EditButton" id = "load">Load</button>
+     </ion-list>
+
+   <div id="listContainer" class="container"><!--[(ngModel)] = "AllLists" (ngModelChange) = "store()"-->
+   
+
+   </div>
+
+   </div>
 
 </ion-content>
+
