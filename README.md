@@ -25,10 +25,12 @@ GENERAL REQUIREMENTS:
       - DOWNLOAD AND INSTALL XCODE SERVICES
       - CREATE A NEW VIRTUAL DEVICE (IOS 11.0.0 OR GREATER)
       - IN COMMAND PROMPT/TERMINAL, 
+           RUN $cd FBLA_App
            RUN  $ionic capacitor add ios 
            THEN $ionic capacitor run ios
 * IN CASE THE APPLICATION FAILS TO RUN ON AN EMULATOR OR IOS DEVICE:
     - RUN APP IN LOCAL HOST WEB SERVER
+      - RUN $cd FBLA_App
       - RUN $ionic serve 
            - FOR LIVE RELOAD FUNCTIONALITY RUN $ionic serve --livereload
 ================================================================
