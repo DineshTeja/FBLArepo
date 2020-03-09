@@ -86,33 +86,33 @@ select::-ms-expand { display: block; }
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 3%;
-    border-color: rgb(180, 180, 180);
+    margin-top: 2%;
+    border-bottom: solid 3px rgb(34, 141, 241);
     width: 65%;
     text-align: center;
-    border-radius: 8px;
 }
 
 .headers {
-    margin-left: 28%;
+    margin-left: 22%;
     margin-right: auto;
     margin-bottom: 0%;
-    font-size: 18px;
-    color: black;
+    font-size: 15px;
+    color: whitesmoke;
     
 }
 
 .chapterHeader {
-    margin-left: 25.5%;
+    margin-left: 20.5%;
     margin-right: auto;
-    font-size: 18px;
-    color: black;
+    font-size: 15px;
+    color: whitesmoke;
 }
 
 .districtHeader {
-    margin-left: 28%;
+    margin-left: 22%;
     margin-right: auto;
-    font-size: 18px;
-    color: black;
+    font-size: 15px;
+    color: whitesmoke;
 }
 
 .Month {
@@ -203,6 +203,7 @@ select::-ms-expand { display: block; }
     margin-right: auto;
     margin-top: 1%;
     font-size: 20px;
+    color: white;
 }
 
 
@@ -238,3 +239,34 @@ select::-ms-expand { display: block; }
 
 }
 
+.membersHeader {
+    position: relative;
+    color: white;
+    background-color: rgb(58, 53, 53);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5%;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.inputHeaders {
+    position: relative;
+    color: white;
+    background-color: rgb(235, 77, 77);
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px 4px 4px 4px;
+
+}
+
+.buttonsTable {
+    margin-left: auto;
+    margin-right: auto;
+}
+td {
+    border: 0px;
+    padding: 3px;
+
+}

@@ -18,15 +18,14 @@
 
 <ion-content  (ngModelChange) = "ngOnChanges()">
 
-        <ion-header>
-                <ion-toolbar class= "subheader"><ion-title class="title">Local Chapter Meetings</ion-title></ion-toolbar>
-        </ion-header>
+    <ion-toolbar class= "subheader"><ion-title class="title">Local Chapter Meetings</ion-title></ion-toolbar>
+        
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
 
 
     
 
-    <h4><ion-list-header class="districtHeader">FBLA District</ion-list-header></h4>
+    <div class= "inputHeaders" ><h4><ion-list-header class="districtHeader">FBLA District</ion-list-header></h4></div>
 
     <select class ="Districts" >
         <span class="iconify" data-icon="ion-md-arrow-dropdown" data-inline="false"></span>
@@ -40,11 +39,11 @@
         <option value = "7">District VII</option>
     </select>
 
-    <h4 ><ion-list-header class="chapterHeader">Local Chapter</ion-list-header></h4>
+    <div class= "inputHeaders" ><h4 ><ion-list-header class="chapterHeader">Local Chapter</ion-list-header></h4></div>
 
     <select class ="Chapters" id = "chapterPicker" [(ngModel)]= "selectedChapter" (ngModelChange) = "generateNewList()">
             <span class="iconify" data-icon="ion-md-arrow-dropdown" data-inline="false"></span>
-            <option value="" disabled default selected>Select your Local Chapter</option>
+            <option value= " " disabled selected default selected>Select your Local Chapter</option>
             <option value= "1">Bentonville High School</option>
             <option value = "2">Springdale High School</option>
             <option value = "3">Heritage High School</option>
@@ -53,7 +52,7 @@
             <option value = "6">Rogers Newtech High School</option>
     </select>
 
-    <h4 ><ion-list-header class="headers">Meeting Date</ion-list-header></h4>
+    <div class= "inputHeaders" > <h4 ><ion-list-header class="headers">Meeting Date</ion-list-header></h4></div>
 
 
   <div id="moreContainer">
@@ -71,23 +70,27 @@
   
   
      <ion-list id ="list" show-delete = "showDelete">
-      <ion-list-header class="ListHeader">Members Present</ion-list-header>
+      <div class= "membersHeader"><ion-list-header class="ListHeader">Members Present</ion-list-header></div>
       <!--<button class = "saveButton">Save Attendance</button>-->
       <form id="schoolForm"> 
             <ion-input class = "schoolInput"  id= "nameInput" type="text" placeholder="Enter New Member Name Here" ></ion-input>
          </form>
    
          <button class = "MemberButton" id = "MemberButton" (click)="checkBoxAdd()">Add Member</button>
-         <button class="EditButton" id ="EditButton" (click) = "removeItems()">Edit</button>
+         <!--<button class="EditButton" id ="EditButton" (click) = "removeItems()">Edit</button>-->
 <!--
          <ion-input class = "schoolInput" type="text" [(ngModel)] = "inputtext" placeholder="test" ></ion-input>
          <button class="EditButton"  (click) = "testSave()">Save</button>
          <button class="EditButton" (click) = "testLoad()">Load</button>-->
-         <button class="EditButton"  id = "save" (click) = "save()">Save</button>
-         <button class="EditButton" id = "load">Load</button>
+         <table class="buttonsTable">
+           <tr>
+             <td><button class="EditButton"  id = "save" (click) = "save()">Save</button></td>
+             <td><button class="EditButton" id = "load" (click) = "load()">Load</button></td>
+           </tr>
+         </table>
      </ion-list>
 
-   <div id="listContainer" class="container"><!--[(ngModel)] = "AllLists" (ngModelChange) = "store()"-->
+   <div id="listContainer" class="container" (onChange) = "containerUpdate()"><!--[(ngModel)] = "AllLists" (ngModelChange) = "store()"-->
    
 
    </div>

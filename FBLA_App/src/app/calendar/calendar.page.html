@@ -11,11 +11,11 @@
 
 <ion-content>
 
-  <ion-header>
-      <ion-toolbar class= "subheader"><ion-title class="title">Calendar of Events</ion-title></ion-toolbar>
-  </ion-header>
 
-  <h4><ion-list-header class="districtHeader">FBLA District</ion-list-header></h4>
+    <ion-toolbar class= "subheader"><ion-title class="title">Calendar of Events</ion-title></ion-toolbar>
+
+<!--
+  <div class= "inputHeaders" ><h4 ><ion-list-header class="districtHeader">FBLA District</ion-list-header></h4></div>
 
   <select class ="Districts" >
       <span class="iconify" data-icon="ion-md-arrow-dropdown" data-inline="false"></span>
@@ -27,9 +27,9 @@
       <option value = "5">District V</option>
       <option value = "6">District VI</option>
       <option value = "7">District VII</option>
-  </select>
+  </select>-->
 
-  <h4 ><ion-list-header class="chapter">Local Chapter</ion-list-header></h4>
+  <div class= "inputHeaders" ><h4 ><ion-list-header class="chapterHeader">Local Chapter</ion-list-header></h4></div>
 
   <select class ="Chapters" id = "chapterPicker" [(ngModel)]= "selectedChapter" (ngModelChange) = "generateNewList()">
           <span class="iconify" data-icon="ion-md-arrow-dropdown" data-inline="false"></span>
@@ -41,20 +41,24 @@
           <option value = "5">Gentry High School</option>
           <option value = "6">Rogers Newtech High School</option>
   </select>
- 
+  <p class = "date" id= "date">{{date}}</p>
 <ion-calendar [(ngModel)]="date"
-    (ngModelChange)="onChange()"
+    (ngModelChange)="generateNewList()"
     [options]="optionsMulti"
     [type]="type"
     [format]="'YYYY-MM-DD'"
     class = "calendar"
     id = "calendar">
 </ion-calendar>
+
+<ion-input class = "schoolInput"  id= "eventInput" type="text" placeholder="Enter Event Name" ></ion-input>
+<ion-input class = "schoolInput"  id= "timeInput" type="text" placeholder="Event Time" ></ion-input>
+
 <button class = "EventsButton" id = "EventsButton" (click)="newEvent()">Add Event</button>
 
-<div id = "eventsContainer">
+ <div class = "container" id ="eventsContainer">
 
-</div>
+ </div>
 
 
 

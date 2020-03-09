@@ -8,6 +8,12 @@ import { NavController } from '@ionic/angular';
   styleUrls: ['./fbla-competitive-events.page.scss'],
 })
 export class FBLACompetitiveEventsPage implements OnInit {
+  public SignUpLink = [
+    {
+      title: 'FBLASignUp',
+      url: '/login'
+    }
+  ]
 
   constructor( public navCtrl: NavController) { }
 
@@ -65,6 +71,7 @@ export class FBLACompetitiveEventsPage implements OnInit {
   hideShow() {
     var x= document.getElementById("Eventstable");
     var y= document.getElementById("button");
+    var cells = x.querySelectorAll("td");
     if (x.style.display === "none") {
       x.style.display = "block";
       y.innerHTML = "Hide Competitive Events List";
@@ -74,7 +81,7 @@ export class FBLACompetitiveEventsPage implements OnInit {
       y.innerHTML = "Show Competitive Events List";
     }
 
-    var cells = x.querySelectorAll("td");
+    
 
     cells.forEach(function(td) {
       

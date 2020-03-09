@@ -17,7 +17,9 @@ const routes: Routes = [
   { path: 'contact-us', loadChildren: './contact-us/contact-us.module#ContactUsPageModule' },
   { path: 'current-events', loadChildren: './current-events/current-events.module#CurrentEventsPageModule' },
   { path: 'fbla-sign-up', loadChildren: './fbla-sign-up/fbla-sign-up.module#FblaSignUpPageModule' },
-  { path: 'calendar', loadChildren: './calendar/calendar.module#CalendarPageModule' }
+  { path: 'calendar', loadChildren: './calendar/calendar.module#CalendarPageModule' },
+  { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
+  { path: 'terms-of-use', loadChildren: './terms-of-use/terms-of-use.module#TermsOfUsePageModule' }
 ];
 
 @NgModule({

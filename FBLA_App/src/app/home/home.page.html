@@ -32,7 +32,7 @@
               
               <h5 class="MissionStatement">FBLA-PBL inspires and prepares students to become community-minded business leaders in a global society through relevant career preparation and leadership experiences.</h5>
         
-              <button class="joinButton" (click)="joinFbla()">Join FBLA Today</button>
+              <button class="joinButton" [routerDirection]="'root'" [routerLink]="[p.url]" *ngFor="let p of SignUpLink">Join FBLA Today</button>
         
           </div>
       </ion-slide>   
@@ -45,7 +45,7 @@
           
           <h5 class="CompEventsDescription">The FBLA National Awards Program, also known as competitive events, recognizes and rewards excellence in a broad range of business and career-related areas. Competitive Events prepare students for successful careers in business and help them thrive in future work environments.</h5>
     
-          <button class="compButton" >View Competitive Events</button>
+          <button class="compButton" [routerDirection]="'root'" [routerLink]="[p.url]" *ngFor="let p of compLink" >View Competitive Events</button>
     
       </div>
       </ion-slide>
@@ -103,7 +103,7 @@
 
    <h6 class="events">National Leadership Conference: June 29 – July 2, 2020, Salt Lake City, Utah</h6>
 
-   <h6 class="viewMore">View More ⇨</h6>
+   <h4 class="viewMore" [routerDirection]="'root'" [routerLink]="[p.url]" *ngFor="let p of calendarLink">View More ⇨</h4>
 
  </div>
 

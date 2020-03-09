@@ -15,7 +15,7 @@
   
 
  <div class="main">
-  <img class = "CatImage" height = "6%" width = "60%" src= "assets/categoriesImage.png">
+  <img class = "CatImage" height = "4%" width = "40%" src= "assets/categoriesImage.png">
   
   <ion-slides class = "slides" autoplay="5000" loop="true" speed="3000">
     <ion-slide>
@@ -131,7 +131,7 @@
   
 
     <div class="eventsBlock">
-      <button class="signUpButton" >Sign Up for an Event</button>
+      <button class="signUpButton" [routerDirection]="'root'" [routerLink]="[p.url]" *ngFor="let p of SignUpLink" >Sign Up for an Event</button>
 
       <h4 class="description">Individual or Team</h4>
 

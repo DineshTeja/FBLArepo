@@ -44,18 +44,25 @@ export class AppComponent {
       icon: 'menu'
     },
     {
-      title: 'Sign Up',
-      url: '/fbla-sign-up',
-      icon: 'menu'
-    },
-    {
       title: 'Calendar',
       url: '/calendar',
       icon: 'menu'
+    },
+    {
+      title: 'Terms of Use',
+      url: '/terms-of-use',
+      icon: 'menu'
     }
-    
   ];
 
+  public LoginPage = [
+    {
+      title: 'Login/Register',
+      url: '/login',
+      icon: 'person'
+    }
+  ];
+  
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,

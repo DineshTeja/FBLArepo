@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
-import { IonicStorageModule } from '@ionic/storage';
+/**import { IonicStorageModule } from '@ionic/storage';*/
 
 
 import { CurrentEventsPage } from './current-events.page';
@@ -22,7 +22,7 @@ const routes: Routes = [
     FormsModule,
     IonicModule,
     RouterModule.forChild(routes),
-    IonicStorageModule.forRoot(),
+    /**IonicStorageModule.forRoot(),*/
   ],
   declarations: [CurrentEventsPage]
 })

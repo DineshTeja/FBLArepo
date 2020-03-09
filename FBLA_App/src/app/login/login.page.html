@@ -1,0 +1,44 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>
+          <img class = "flag" height = "10%" width = "20%" src= "assets/fblaFlag.png">
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+
+  <ion-content>
+    
+      <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+  
+    <form>
+  
+  
+        <ion-toolbar class= "subheader"><ion-list-header class="formtitle">FBLA Sign Up Form</ion-list-header></ion-toolbar>
+        
+  
+        <img id = "headerpic" class = "headerpic" height = "190px" width = "610px" src= "assets/FBLA-logo.png"> 
+        <img id = "customerIcon" class = "customerIcon" height = "150px" width = "150px" src= "assets/customerIcon.png">
+       
+        <ion-list class= "accountList" id = "accountList">
+          <ion-item id = "memberItem"></ion-item>
+          <ion-item id = "compItem"></ion-item>
+          <ion-item id = "chapItem"></ion-item>
+
+        </ion-list>
+
+      <ion-input class = "schoolInput"  id= "nameInput" type="text" placeholder="Enter New Member Name Here" ></ion-input>
+      <ion-input class = "schoolInput"  id= "compEventsInput" type="text" placeholder="Choose your Competitive Event" ></ion-input>
+ 
+
+      <ion-input class = "schoolInput"  id= "chapterInput" type="text" placeholder="Local Chapter Name" ></ion-input>    
+    </form>
+    <button id = "joinButton" class = "JoinButton" (click) = "login()">Create Account</button>
+    <button id = "logoutButton" class = "logoutButton">Logout</button>
+    <img class = "world" height = "225px" width = "600px" src= "assets/world-white.jpg">
+  
+  </ion-content>

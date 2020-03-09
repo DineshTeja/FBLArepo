@@ -1,16 +1,18 @@
-<ion-header>
-  <ion-toolbar>
+<ion-header class = "headerBlock">
+  <ion-toolbar class= "headerBlock">
       <ion-buttons slot="start">
           <ion-menu-button></ion-menu-button>
       </ion-buttons>
     <ion-title><img class = "flag" height = "10%" width = "20%" src= "assets/fblaFlag.png"></ion-title>
+  
   </ion-toolbar>
+
 </ion-header>
 
 <ion-content class="background">
-   <ion-header>
-     <ion-toolbar class= "subheader"><ion-title class="title">Meet the Officers</ion-title></ion-toolbar>
- </ion-header>
+
+  <ion-toolbar class= "subheader"><ion-title class="title">Meet the Officers</ion-title></ion-toolbar>
+
   <!--
     <ion-slides class = "slides" autoplay="5000" loop="true" speed="3000">
         <ion-slide>
@@ -35,20 +37,26 @@
     <h4 class = "officers">Parliamentarian: Karina Lopez</h4> 
 
 -->
-
-<div class ="officerBlocks">
+<ion-slides class = "slides" autoplay="5000" loop="true" speed="3000">
+  <ion-slide>
+  <div class ="officerBlocks">
     <h2 class="subheading">Gabby Thornhill</h2>
     <h3 class="roles">District VII President, State VP</h3>
     <img class = "image" height = "60%" width = "30%" src= "assets/meetUSpics/Gabby.png">
     <h3 class="schools">Rogers New Tech High School</h3>
- </div>
+  </div>
+ </ion-slide>
 
+  <ion-slide>
+   <div class ="officerBlocks">
+       <h2 class="subheading">Emily Cousins</h2>
+       <h3 class="roles">District VII Vice President</h3>
+       <img class = "image" height = "60%" width = "30%" src= "assets/meetUSpics/EmilyCousins.png">
+   </div> 
 
- <div class ="officerBlocks">
-    <h2 class="subheading">Emily Cousins</h2>
-    <h3 class="roles">District VII Vice President</h3>
-    <img class = "image" height = "60%" width = "30%" src= "assets/meetUSpics/EmilyCousins.png">
-  </div> 
+  </ion-slide>
+
+  <ion-slide>
 
   <div class ="officerBlocks">
     <h2 class="subheading">Cindy Ledezma</h2>
@@ -57,23 +65,56 @@
 
   </div> 
 
+  </ion-slide>
+
+  <ion-slide>
   <div class ="officerBlocks">
     <h2 class="subheading">Luke Ernest</h2>
     <h3 class="roles">District VII Treasurer</h3>
     <img class = "image" height = "60%" width = "30%" src= "assets/meetUSpics/LukeErnest.png">
   </div> 
+  </ion-slide>
 
+  <ion-slide>
   <div class ="officerBlocks">
     <h2 class="subheading">Alexandra Barroso</h2>
     <h3 class="roles">District VII Reporter</h3>
     <img class = "image" height = "60%" width = "30%" src= "assets/meetUSpics/Alexandra.png">
   </div> 
+  </ion-slide>
 
+  <ion-slide>
   <div class ="officerBlocks">
     <h2 class="subheading">Karina Lopez</h2>
     <h3 class="roles">District VII Parliamentarian</h3>
     <img class = "image" height = "60%" width = "30%" src= "assets/meetUSpics/KarinaLopez.png">
  </div>
+</ion-slide>
 
+</ion-slides>
+
+<ion-toolbar class= "localHeader"><ion-title class="title">Your Local Officer Team</ion-title></ion-toolbar>
+
+<div class= "inputHeaders" ><h4 ><ion-list-header class="chapterHeader">Local Chapter</ion-list-header></h4></div>
+
+    <select class ="Chapters" id = "chapterPicker" [(ngModel)]= "selectedChapter" (ngModelChange) = "generateNewList()">
+            <span class="iconify" data-icon="ion-md-arrow-dropdown" data-inline="false"></span>
+            <option value= " " disabled selected default selected>Select your Local Chapter</option>
+            <option value= "1">Bentonville High School</option>
+            <option value = "2">Springdale High School</option>
+            <option value = "3">Heritage High School</option>
+            <option value = "4">Lincoln High School</option>
+            <option value = "5">Gentry High School</option>
+            <option value = "6">Rogers Newtech High School</option>
+    </select>
+
+   
+    <ion-input class = "schoolInput"  id= "nameInput" type="text" placeholder="Enter Officer Name Here" ></ion-input>
+    <ion-input class = "schoolInput"  id= "officerInput" type="text" placeholder="Officer Occupation" ></ion-input>
+    <button class = "MemberButton" id = "MemberButton" (click)="officerAdd()">Add Officer</button>
+
+    <div class = "container" id = "listContainer">
+
+    </div>
 
 </ion-content>

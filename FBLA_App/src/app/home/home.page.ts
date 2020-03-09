@@ -12,6 +12,25 @@ import { FblaSignUpPage } from '../fbla-sign-up/fbla-sign-up.page';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  public SignUpLink = [
+    {
+      title: 'FBLASignUp',
+      url: '/login'
+    }
+  ]
+  public compLink = [
+
+    {
+      title: 'FBLACompEvents',
+      url: '/fbla-competitive-events'
+    }
+  ]
+  public calendarLink = [
+    {
+      title: 'Calendar',
+      url: '/calendar'
+    }
+  ]
 
   constructor( private router: Router) {
     
@@ -34,7 +53,8 @@ export class HomePage {
   }
 
   joinFbla() {
-    this.router.navigateByUrl('..src/app/fbla-sign-up')
+    this.router.navigateByUrl('../fbla-sign-up');
+    
   }
 
 }
