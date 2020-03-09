@@ -8,6 +8,7 @@ ARKANSAS FBLA DISTRICT VII
 ================================================================
 INSTALLATION & RUNTIME REQUIREMENTS
 GENERAL REQUIREMENTS:
+ - DOWNLOAD ALL CODE FROM THIS REPOSITORY
  - INSTALL NODE.JS
       - DOWNLOAD PROPER NODE.JS VERSION FROM https://nodejs.org/en/download/
 
